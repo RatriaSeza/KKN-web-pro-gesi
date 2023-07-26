@@ -34,7 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/3c95b2f216.js" crossorigin="anonymous"></script>
-    {{ $customJS }}
+    {{ $customJS ?? '' }}
 </body>
 
 </html>

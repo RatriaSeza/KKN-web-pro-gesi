@@ -3,11 +3,15 @@
         Desa Gesi | Beranda
         </x-slot>
 
-        <div>
+        <div class="mt-16 -z-10">
             <div class="owl-carousel">
-                <img class="w-full h-screen object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}"
+                <img class="w-full h-96 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}"
                     alt="Kantor Lurah">
             </div>
+        </div>
+
+        <div class="bg-white -mt-16 h-48 max-w-5xl mx-auto shadow-md z-[999]">
+            asdfsa
         </div>
 
         <div>

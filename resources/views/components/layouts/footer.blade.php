@@ -82,12 +82,12 @@
 
 <div class="bg-gray-900">
     <div class="flex items-center justify-evenly sm:justify-between flex-col sm:flex-row sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[75px] container mx-auto h-[100px]">
-        <div class="text-gray-400">
+        <div class="text-gray-400 text-xs">
             <i class="fa-regular fa-copyright"></i>
-            Desa Gesi 2023
+            2023 Pemerintahan Desa Gesi Kecamatan Gesi
         </div>
 
-        <ul class="flex gap-[15px] text-gray-400 cursor-pointer">
+        <ul class="flex gap-[15px] text-gray-400 cursor-pointer text-xs">
             <li class="ease-in duration-200 hover:text-gray-100"><i class="fa-brands fa-xl fa-twitter"></i>
             </li>
             <li class="ease-in duration-200 hover:text-gray-100"><i class="fa-brands fa-xl fa-linkedin"></i>
