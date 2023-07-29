@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <div class="bg-gray-200 border relative -top-14 h-40 max-w-5xl mx-auto shadow-md z-[999] rounded-md">
+        <div class="bg-gray-200 border relative -top-14 h-40 max-w-5xl mx-auto shadow-md z-10 rounded-md">
 
         </div>
 
@@ -19,10 +19,11 @@
 
             <div class="flex justify-center gap-6 max-w-5xl mx-auto">
                 @for ($i = 0; $i < 3; $i++)
-                <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+                <div class="bg-white max-w-xs rounded overflow-hidden shadow-lg">
                     <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
                     <div class="px-4 py-3">
-                        <div class="font-bold text-lg mb-2">The Coldest Sunset</div>
+                        <div class="font-semibold text-lg">The Coldest Sunset</div>
+                        <p class="text-xs my-1 text-yellow-700 font-medium">1 Juli 1999</p>
                         <p class="text-gray-700 text-sm line-clamp-3">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
                             et perferendis eaque, exercitationem praesentium nihil.

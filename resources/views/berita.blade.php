@@ -11,7 +11,7 @@
                 <div class="bg-white max-w-xs rounded overflow-hidden shadow-lg">
                     <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
                     <div class="px-4 py-3">
-                        <div class="font-bold text-lg">The Coldest Sunset</div>
+                        <div class="font-semibold text-lg">The Coldest Sunset</div>
                         <p class="text-xs my-1 text-yellow-700 font-medium">1 Juli 1999</p>
                         <p class="text-gray-700 text-sm line-clamp-3">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
