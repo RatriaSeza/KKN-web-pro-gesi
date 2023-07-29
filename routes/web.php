@@ -28,3 +28,7 @@ Route::get('/perangkat-desa', function () {
 Route::get('/berita', function () {
     return view('berita');
 })->name('berita');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');

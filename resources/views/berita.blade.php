@@ -3,7 +3,7 @@
         Desa Gesi | Berita
     </x-slot>
 
-    <div class="container mx-auto mt-24">
+    <div class="container mx-auto my-24">
         <div class="max-w-5xl mx-auto">
             <div class="text-2xl font-semibold border-b-4 border-gray-700 w-fit">Gesi News</div>
             <div class="flex flex-wrap justify-center gap-6 mt-3">

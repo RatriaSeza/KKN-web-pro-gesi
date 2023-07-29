@@ -5,13 +5,13 @@
 
         <div class="mt-16 -z-10">
             <div class="owl-carousel">
-                <img class="w-full h-96 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}"
+                <img class="w-full h-[420px] object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}"
                     alt="Kantor Lurah">
             </div>
         </div>
 
-        <div class="bg-white -mt-16 h-48 max-w-5xl mx-auto shadow-md z-[999]">
-            asdfsa
+        <div class="bg-gray-200 border relative -top-14 h-40 max-w-5xl mx-auto shadow-md z-[999] rounded-md">
+
         </div>
 
         <div>

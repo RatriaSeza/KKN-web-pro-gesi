@@ -24,7 +24,7 @@
         {{ $slot }}
     </div>
 
-    <footer class="mt-20 bg-gray-800">
+    <footer class="bg-gray-800">
         <x-layouts.footer />
     </footer>
 

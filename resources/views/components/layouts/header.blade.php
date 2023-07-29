@@ -16,7 +16,7 @@
             </div>
         </div>
         <a class="hover:text-secondary ease-out duration-150" href="{{ route('berita') }}">Berita</a>
-        <a
+        <a href="{{ route('login') }}"
             class="text-primary hover:text-white border border-secondary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer ease-out duration-150">Login</a>
     </nav>
 </div>
