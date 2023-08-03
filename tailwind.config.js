@@ -6,6 +6,7 @@ export default {
     theme: {
         fontFamily: {
             Primary: "Poppins",
+            Secondary: "DM Sans"
         },
         extend: {
             colors: {

@@ -16,11 +16,11 @@
 </head>
 
 <body class="font-Primary">
-    <header class="bg-white w-full shadow-md fixed top-0 z-50">
+    <header class="bg-white w-full shadow-xl fixed top-0 z-50">
         <x-layouts.header />
     </header>
 
-    <div class="bg-white">
+    <div class="bg-[#E6E8F3]">
         {{ $slot }}
     </div>
 

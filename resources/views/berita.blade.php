@@ -3,12 +3,12 @@
         Desa Gesi | Berita
     </x-slot>
 
-    <div class="container mx-auto my-24">
+    <div class="container mx-auto py-24 bg-[#E6E8F3]">
         <div class="max-w-5xl mx-auto">
-            <div class="text-2xl font-semibold border-b-4 border-gray-700 w-fit">Gesi News</div>
+            <div class="font-Secondary text-sky-500 text-3xl font-extrabold border-b-4 border-sky-500 w-fit">Gesi News</div>
             <div class="flex flex-wrap justify-center gap-6 mt-3">
-                @for ($i = 0; $i < 10; $i++)
-                <div class="bg-white max-w-xs rounded overflow-hidden shadow-lg">
+                @for ($i = 0; $i < 6; $i++)
+                <div class="bg-white max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)]">
                     <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
                     <div class="px-4 py-3">
                         <div class="font-semibold text-lg">The Coldest Sunset</div>
@@ -20,6 +20,22 @@
                     </div>
                 </div>
                 @endfor
+            </div>
+            <div class="flex justify-center space-x-1 mt-10">
+                <button title="previous" type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="bg-white w-4">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button type="button" title="Page 1" class="bg-white inline-flex text-sky-500 items-center justify-center w-8 h-8 text-sm font-semibold border border-sky-500 rounded shadow-md">1</button>
+                <button type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 2">2</button>
+                <button type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 3">3</button>
+                <button type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md" title="Page 4">4</button>
+                <button title="next" type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>

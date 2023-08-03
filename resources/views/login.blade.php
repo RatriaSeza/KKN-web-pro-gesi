@@ -7,7 +7,7 @@
 
         <div class="bg-[#E6E8F3] py-20">
             <div class="bg-gray-50 w-1/3 mx-auto mt-10 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10">
-                <p class="text-2xl font-medium mb-4">Log In</p>
+                <p class="text-3xl font-semibold mb-4 text-gray-700 font-Secondary">Log In</p>
                 <div>
                     <form class="space-y-4 md:space-y-6" action="#">
                         <div>
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <button type="submit"
-                            class="w-full text-white bg-gray-800 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Log in</button>
+                            class="w-full text-white bg-gray-800 hover:bg-gray-300 hover:text-gray-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ease-out duration-100">Login</button>
                     </form>
                 </div>
             </div>

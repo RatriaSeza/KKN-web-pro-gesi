@@ -3,7 +3,7 @@
         Desa Gesi | Perangkat Desa
         </x-slot>
 
-        <div class="my-20">
+        <div class="my-20 bg-[#E6E8F3]">
             <!-- component -->
             <div class="flex flex-col justify-center items-center">
                 <h1 class="text-3xl top-0 absolute">Organisation Flow chart</h1>
