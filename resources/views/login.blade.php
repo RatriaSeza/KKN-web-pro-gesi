@@ -3,8 +3,6 @@
         Desa Gesi | Login
         </x-slot>
 
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
-
         <div class="bg-[#E6E8F3] py-20">
             <div class="bg-gray-50 w-1/3 mx-auto mt-10 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10">
                 <p class="text-3xl font-semibold mb-4 text-gray-700 font-Secondary">Log In</p>

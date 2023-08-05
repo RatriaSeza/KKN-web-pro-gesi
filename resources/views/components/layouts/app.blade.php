@@ -13,10 +13,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
 </head>
 
 <body class="font-Primary">
-    <header class="bg-white w-full shadow-xl fixed top-0 z-50">
+    <header x-data="{dropdown: false}" class="bg-white w-full shadow-xl fixed top-0 z-50">
         <x-layouts.header />
     </header>
 
