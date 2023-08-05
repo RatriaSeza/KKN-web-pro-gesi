@@ -9,7 +9,8 @@
 
     <link rel="icon" href="{{ asset('img/sragen-logo.png') }}">
 
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom-admin.min.css') }}">
 </head>
 
 <body class="font-Primary">
@@ -22,6 +23,8 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/3c95b2f216.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/custom-admin.min.js') }}"></script>
     {{ $customJS ?? '' }}
 </body>
 

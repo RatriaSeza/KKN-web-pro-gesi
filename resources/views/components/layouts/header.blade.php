@@ -44,7 +44,7 @@
                     <i class="fa-solid fa-chevron-up"></i>
                 </div>
             </button>
-            <div x-bind:class="accordion ? 'max-h-0 invisible' : 'max-h-full visible mt-3'" class=" bg-gray-100 font-Secondary font-bold flex flex-col text-xs rounded pl-3 transition-[max-height] duration-200 ease-out overflow-hidden">
+            <div x-bind:class="accordion ? 'max-h-0 invisible' : 'max-h-full visible mt-3'" class=" bg-gray-100 font-Secondary font-bold flex flex-col text-xs rounded pl-3 transition-[max-height] duration-300 ease-in overflow-hidden">
                 <a class="py-2" href="{{ route('sejarah') }}">Sejarah</a>
                 <a class="py-2" href="{{ route('perangkat-desa') }}">Perangkat Desa</a>
             </div>

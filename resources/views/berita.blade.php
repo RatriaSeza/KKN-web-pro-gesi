@@ -4,16 +4,16 @@
     </x-slot>
 
     <div class="container mx-auto py-24 bg-[#E6E8F3]">
-        <div class="max-w-5xl mx-auto">
+        <div class="md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-7 md:mx-auto">
             <div class="font-Secondary text-sky-500 text-3xl font-extrabold border-b-4 border-sky-500 w-fit">Gesi News</div>
             <div class="flex flex-wrap justify-center gap-6 mt-3">
                 @for ($i = 0; $i < 6; $i++)
-                <div class="bg-white max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)]">
+                <div class="bg-white max-w-full md:max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)]">
                     <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
                     <div class="px-4 py-3">
                         <div class="font-semibold text-lg">The Coldest Sunset</div>
-                        <p class="text-xs my-1 text-yellow-700 font-medium">1 Juli 1999</p>
-                        <p class="text-gray-700 text-sm line-clamp-3">
+                        <p class="text-xs md:text-sm my-1 text-yellow-700 font-medium">1 Juli 1999</p>
+                        <p class="text-gray-700 text-xs md:text-sm line-clamp-3">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
                             et perferendis eaque, exercitationem praesentium nihil.
                         </p>
