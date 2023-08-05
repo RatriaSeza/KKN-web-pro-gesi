@@ -40,3 +40,7 @@ Route::get('/admin', function () {
 Route::get('/news', function () {
     return view('news-content');
 })->name('news-show');
+
+Route::get('/admin/berita', function () {
+    return view('admin-berita');
+});
