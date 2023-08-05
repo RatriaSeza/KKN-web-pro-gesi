@@ -18,7 +18,7 @@
 </head>
 
 <body class="font-Primary">
-    <header x-data="{dropdown: false}" class="bg-white w-full shadow-xl fixed top-0 z-50">
+    <header x-data="{dropdown: true}" class="bg-white w-full shadow-xl fixed top-0 z-50">
         <x-layouts.header />
     </header>
 

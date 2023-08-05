@@ -35,9 +35,16 @@
                 <div>
                     Informasi
                 </div>
-                <i class="fa-solid fa-chevron-down"></i>
+
+                <div x-bind:class="accordion ? '' : 'hidden'">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div x-bind:class="accordion ? 'hidden' : ''">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
             </button>
-            <div x-bind:class="accordion ? 'hidden' : ''" class="font-Secondary font-bold flex flex-col text-xs rounded ml-3">
+            <div x-bind:class="accordion ? 'max-h-0 invisible' : 'max-h-full visible mt-3'" class=" bg-gray-100 font-Secondary font-bold flex flex-col text-xs rounded pl-3 transition-[max-height] duration-200 ease-out overflow-hidden">
                 <a class="py-2" href="{{ route('sejarah') }}">Sejarah</a>
                 <a class="py-2" href="{{ route('perangkat-desa') }}">Perangkat Desa</a>
             </div>
@@ -45,6 +52,6 @@
 
         <a class="hover:text-secondary ease-out duration-150 py-2" href="{{ route('berita') }}">Berita</a>
         <a href="{{ route('login') }}"
-            class="text-primary hover:text-white border border-secondary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer ease-out duration-150">Login</a>
+            class="bg-primary text-white border border-secondary focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer ease-out duration-150">Login</a>
     </div>
 </nav>
