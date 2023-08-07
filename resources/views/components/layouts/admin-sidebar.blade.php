@@ -13,7 +13,7 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Home -->
-        <li class="nav-item active ">
+        <li class="nav-item active">
             <a class="nav-link" href="index.html">
                 <i class="fa-solid fa-home"></i>
                 <span>Beranda</span></a>

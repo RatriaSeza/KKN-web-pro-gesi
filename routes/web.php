@@ -44,3 +44,7 @@ Route::get('/news', function () {
 Route::get('/admin/berita', function () {
     return view('admin-berita');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
