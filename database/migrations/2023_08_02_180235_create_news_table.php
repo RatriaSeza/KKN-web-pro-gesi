@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->string('title');
             $table->string('slug');
-            $table->date('published');
+            $table->date('published_date');
             $table->text('summary');
             $table->text('content');
             $table->boolean('is_publish');

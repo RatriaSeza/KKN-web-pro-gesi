@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link id="jos-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jesvijonathan/JOS-Animation-Library/dist/jos.css" crossorigin="anonymous" />
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
 </head>
@@ -36,6 +37,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="https://kit.fontawesome.com/3c95b2f216.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jesvijonathan/JOS-Animation-Library/dist/jos.min.js"></script>
     {{ $customJS ?? '' }}
 </body>
 

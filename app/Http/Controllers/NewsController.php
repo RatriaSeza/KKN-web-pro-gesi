@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -11,7 +13,11 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $news = DB::table('news')->where('is_publish', true)->orderBy('created_at')->get();
+
+        return view('berita', [
+            'news' => $news
+        ]);
     }
 
     /**

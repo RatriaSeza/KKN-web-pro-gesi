@@ -7,19 +7,25 @@
         <div class="md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-7 md:mx-auto">
             <div class="font-Secondary text-sky-500 text-3xl font-extrabold border-b-4 border-sky-500 w-fit">Gesi News</div>
             <div class="flex flex-wrap justify-center gap-6 mt-3">
-                @for ($i = 0; $i < 6; $i++)
+                @forelse ($news as $berita)
                 <div class="bg-white max-w-full md:max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)]">
                     <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
                     <div class="px-4 py-3">
-                        <div class="font-semibold text-lg">The Coldest Sunset</div>
-                        <p class="text-xs md:text-sm my-1 text-yellow-700 font-medium">1 Juli 1999</p>
+                        <div class="font-semibold text-lg">{{ $berita->title }}</div>
+                        <p class="text-xs md:text-sm my-1 text-yellow-700 font-medium">{{ date("d F Y", strtotime($berita->published_date)) }}</p>
                         <p class="text-gray-700 text-xs md:text-sm line-clamp-3">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
                             et perferendis eaque, exercitationem praesentium nihil.
                         </p>
                     </div>
                 </div>
-                @endfor
+                @empty
+                <div class="px-12 md:px-20 py-8 md:py-14 rounded-lg bg-gray-100 shadow-[rgba(50,50,93,0.25)_0px_30px_50px_-12px_inset,rgba(0,0,0,0.3)_0px_18px_26px_-18px_inset]">
+                    <p class="font-bold text-gray-600">
+                        Belum ada berita
+                    </p>
+                </div>
+                @endforelse
             </div>
             <div class="flex justify-center space-x-1 mt-10">
                 <button title="previous" type="button" class="bg-white inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md">

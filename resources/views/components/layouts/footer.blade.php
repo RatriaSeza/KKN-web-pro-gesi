@@ -12,67 +12,33 @@
             </div>
         </div>
 
-        <div class="flex justify-center sm:justify-between flex-wrap lg:flex-nowrap gap-y-[60px] gap-x-[90px] sm:gap-x-0 lg:w-7/12 text-sm">
-            <div class="text-center sm:text-left">
-                <div class="mb-[18px] text-gray-400 font-bold select-none">Product</div>
-                <ul class="flex flex-col gap-[10px] text-gray-200">
-                    <a class="hover:underline" href="#">
-                        <li>Overview</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Features</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Solutions</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Tutorials</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Pricing</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Releases</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="text-center sm:text-left">
-                <div class="mb-[18px] text-gray-400 font-bold select-none">Company</div>
-
-                <ul class="flex flex-col gap-[10px] text-gray-200">
-                    <a class="hover:underline" href="#">
-                        <li>About us</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Careers</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Press</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>News</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Media kit</li>
-                    </a>
-                    <a class="hover:underline" href="#">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </div>
-
+        <div class="flex justify-center sm:justify-between flex-wrap lg:flex-nowrap gap-y-[60px] gap-x-[90px] sm:gap-x-0 text-sm mb-5">
             <div class="text-center sm:text-left">
                 <div class="mb-[18px] text-gray-400 font-bold select-none">Hubungi Kami</div>
-                <ul class="flex flex-col gap-4 text-gray-200">
+                <ul class="flex flex-col gap-4 items-center md:items-start text-gray-200">
                     <a class="hover:underline" href="https://goo.gl/maps/4UTuB1ikzE5a6faP7" target="_blank">
-                        <li>Jalan Doang Ga Jadian</li>
+                        <li class="flex items-center">
+                            <img class="w-6 h-6 mr-2" src="{{ asset('img/icon/map.png') }}" alt="Lokasi">
+                            <span>Gesi RT 14, Desa Gesi, Kec. Gesi, Kab. Sragen, Jawa Tengah 57262</span>
+                        </li>
                     </a>
-                    <a class="hover:underline" href="tel:+628999999999">
-                        <li><i class="mr-1 fa-solid fa-phone"></i>+62 899 999 99</li>
+                    <a class="hover:underline" href="tel:081299886351">
+                        <li class="flex items-center">
+                            <img class="w-6 h-6 mr-2" src="{{ asset('img/icon/whatsapp.png') }}" alt="HP">
+                            <span>0812-9988-6351</span>
+                        </li>
                     </a>
-                    <a class="hover:underline" href="#">
-                        <li><i class="mr-1 fa-solid fa-envelope"></i>gesi@gmail.com</li>
+                    <a class="hover:underline" href="mailto: pemerintahdesagesi@gmail.com">
+                        <li class="flex items-center">
+                            <img class="w-6 h-6 mr-2" src="{{ asset('img/icon/gmail.png') }}" alt="Email">
+                            <span>pemerintahdesagesi@gmail.com</span>
+                        </li>
+                    </a>
+                    <a class="hover:underline" href="https://www.instagram.com/gesi_kita/">
+                        <li class="flex items-center">
+                            <img class="w-6 h-6 mr-2" src="{{ asset('img/icon/instagram.png') }}" alt="Instagram">
+                            <span>@gesi_kita</span>
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -87,13 +53,6 @@
             2023 Pemerintahan Desa Gesi Kecamatan Gesi
         </div>
 
-        <ul class="flex gap-[15px] text-gray-400 cursor-pointer text-xs">
-            <li class="ease-in duration-200 hover:text-gray-100"><i class="fa-brands fa-xl fa-facebook"></i>
-            </li>
-            <li class="ease-in duration-200 hover:text-gray-100"><i class="fa-brands fa-xl fa-instagram"></i>
-            </li>
-            <li class="ease-in duration-200 hover:text-gray-100"><i class="fa-brands fa-xl fa-youtube"></i>
-            </li>
-        </ul>
+        <div class="text-gray-400 text-xs">Made with <span class="text-pink-600"><i class="fa-regular fa-heart"></i></span> by KKN TIM II 2022/2023 UNDIP</div>
     </div>
 </div>

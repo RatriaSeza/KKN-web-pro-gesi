@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,9 +38,7 @@ Route::get('/admin', function () {
     return view('admin.index');
 })->name('admin');
 
-Route::get('/news', function () {
-    return view('news-content');
-})->name('news-show');
+Route::get('/news', [NewsController::class, 'index'])->name('news');
 
 Route::get('/admin/berita', function () {
     return view('admin-berita');

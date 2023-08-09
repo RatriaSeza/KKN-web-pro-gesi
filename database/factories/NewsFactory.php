@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,15 @@ class NewsFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id' => User::get()->random(),
+            'title' => fake()->sentence(4),
+            'slug' => function (array $attributes) {
+                return $attributes['title'];
+            },
+            'published_date' => fake()->date('Y-m-d'),
+            'summary' => fake()->sentence(5),
+            'content' => fake()->sentence(50),
+            'is_publish' => 1,
         ];
     }
 }
