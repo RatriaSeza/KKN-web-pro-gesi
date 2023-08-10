@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('summary');
             $table->text('content');
             $table->boolean('is_publish');
+            $table->string('cover_path');
             $table->timestamps();
             $table->softDeletes();
         });

@@ -8,17 +8,18 @@
             <div class="font-Secondary text-sky-500 text-3xl font-extrabold border-b-4 border-sky-500 w-fit">Gesi News</div>
             <div class="flex flex-wrap justify-center gap-6 mt-3">
                 @forelse ($news as $berita)
-                <div class="bg-white max-w-full md:max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)]">
-                    <img class="w-full h-40 object-cover" src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
-                    <div class="px-4 py-3">
-                        <div class="font-semibold text-lg">{{ $berita->title }}</div>
-                        <p class="text-xs md:text-sm my-1 text-yellow-700 font-medium">{{ date("d F Y", strtotime($berita->published_date)) }}</p>
-                        <p class="text-gray-700 text-xs md:text-sm line-clamp-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
-                            et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                    </div>
-                </div>
+                <a href="{{ route('news.show', $berita->slug) }}" class="bg-white w-[90%] md:max-w-xs rounded overflow-hidden shadow-[0_3px_5px_rgb(0,0,0,0.2)] hover:scale-105 ease-out duration-150">
+                    <article class="">
+                        <img class="w-full h-40 object-cover " src="{{ asset('img/carousel/kantor-lurah.jpg') }}" alt="Kantor Lurah">
+                        <div class="px-4 py-3">
+                            <div class="font-semibold md:text-lg h-10 md:h-12 leading-5 md:leading-6 line-clamp-2">{{ $berita->title }}</div>
+                            <p class="text-xs md:text-sm my-1 text-yellow-700 font-medium">{{ \Carbon\Carbon::parse($berita->published_date)->locale('id')->isoFormat('D MMMM Y') }}</p>
+                            <p class="h-12 md:h-16 text-gray-700 text-xs md:text-sm line-clamp-3 break-words">
+                                {{ $berita->summary }} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, molestiae.
+                            </p>
+                        </div>
+                    </article>
+                </a>
                 @empty
                 <div class="px-12 md:px-20 py-8 md:py-14 rounded-lg bg-gray-100 shadow-[rgba(50,50,93,0.25)_0px_30px_50px_-12px_inset,rgba(0,0,0,0.3)_0px_18px_26px_-18px_inset]">
                     <p class="font-bold text-gray-600">
@@ -45,4 +46,8 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('nav-news').classList.add('text-sky-500');
+    </script>
 </x-layouts.app>

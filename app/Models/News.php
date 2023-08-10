@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 class News extends Model
 {
@@ -26,7 +28,10 @@ class News extends Model
         'published_date',
         'content',
         'is_publish',
+        'cover_path'
     ];
+
+    public const COVER_PATH = 'news-covers';
 
     public function author(): BelongsTo
     {
@@ -38,10 +43,15 @@ class News extends Model
         return Carbon::parse($this->attributes['published_date'])->translatedFormat('d');
     }
 
+    public function scopeActive(Builder $query): Builder
+    {
+        return $query->where('is_publish', true);
+    }
+
     protected function slug(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => str(str($value)->slug('-').'-'.Str::random(6))->lower(),
+            set: fn (string $value) => str(str($value)->slug('-').'-'.Str::random(3))->lower(),
         );
     }
 }

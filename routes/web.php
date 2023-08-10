@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', HomeController::class)->name('homepage');
 
 Route::get('/sejarah', function () {
     return view('sejarah');
@@ -30,19 +30,21 @@ Route::get('/berita', function () {
     return view('berita');
 })->name('berita');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 
 Route::get('/admin', function () {
     return view('admin.index');
 })->name('admin');
 
-Route::get('/news', [NewsController::class, 'index'])->name('news');
+Route::get('/berita', [NewsController::class, 'index'])->name('news');
+Route::get('/berita/{news:slug}', [NewsController::class, 'show'])->name('news.show');
 
-Route::get('/admin/berita', function () {
-    return view('admin-berita');
-});
+Route::get('/admin/berita', [NewsController::class, 'indexAdmin'])->name('admin.news');
+
+Route::get('/admin/berita/create', [NewsController::class, 'create'])->name('admin.news.create');
+Route::delete('/admin/berita/{news:slug}', [NewsController::class, 'destroy'])->name('admin.news.destroy');
+Route::post('/admin/berita', [NewsController::class, 'store'])->name('admin.news.store');
+Route::get('/admin/berita/{news:slug}/publish', [NewsController::class, 'togglePublish'])->name('admin.news.toggle.publish');
 
 Route::get('/test', function () {
     return view('test');

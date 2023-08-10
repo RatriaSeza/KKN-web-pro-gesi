@@ -20,4 +20,8 @@
             </p>
         </div>
     </div>
+
+    <script>
+        document.getElementById('nav-info').classList.add('text-sky-500');
+    </script>
 </x-layouts.app>

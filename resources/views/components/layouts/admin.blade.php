@@ -45,6 +45,7 @@
     <script src="https://kit.fontawesome.com/3c95b2f216.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/custom-admin.min.js') }}"></script>
     {{ $customJS ?? '' }}
 </body>

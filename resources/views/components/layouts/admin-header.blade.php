@@ -11,12 +11,12 @@
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->
-        <li class="nav-item dropdown no-arrow">
+        <li class="nav-item dropdown no-arrow hover:bg-gray-500">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span class="mr-4 d-none d-lg-inline text-gray-600 small">Admin Gesi</span>
-                <div class="bg-secondary rounded-circle px-2 py-1">
-                    <i class="text-light fa-solid fa-user-secret"></i>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin Gesi</span>
+                <div class="bg-gray-200 rounded-circle px-2 py-2">
+                    <img class="w-6 h-6" src="{{ asset('img/icon/man.png') }}" alt="Admin">
                 </div>
             </a>
             <!-- Dropdown - User Information -->

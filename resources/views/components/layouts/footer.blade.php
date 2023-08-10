@@ -1,14 +1,12 @@
 <div class="flex flex-col mx-auto container h-auto ">
     <div class="flex lg:items-center lg:justify-between flex-col lg:flex-row gap-y-[45px] py-[30px] lg:py-0 px-[15px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[75px] w-full h-auto lg:h-[380px]">
         <div class="lg:w-4/12">
-            <div class="flex items-center justify-center gap-x-[8px] mb-[30px] text-white font-semibold">
-                <img class="h-8 w-auto" src="{{ asset('img/sragen-logo.png') }}" alt="Sragen">
+            <div class="flex items-center flex-col justify-center gap-x-[8px] mb-[30px] text-white font-semibold">
+                <img class="h-20 mb-3 w-auto" src="{{ asset('img/sragen-logo.png') }}" alt="Sragen">
                 Desa Gesi, Kecamatan Gesi
             </div>
 
             <div class="text-center text-gray-200 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magnam ipsum doloremque praesentium repudiandae similique quas ipsa!
             </div>
         </div>
 
@@ -53,6 +51,6 @@
             2023 Pemerintahan Desa Gesi Kecamatan Gesi
         </div>
 
-        <div class="text-gray-400 text-xs">Made with <span class="text-pink-600"><i class="fa-regular fa-heart"></i></span> by KKN TIM II 2022/2023 UNDIP</div>
+        <div class="text-gray-400 text-xs">Made with <span class="text-pink-600 mx-1"><i class="fa-regular fa-heart"></i></span> by KKN TIM II 2022/2023 UNDIP</div>
     </div>
 </div>
